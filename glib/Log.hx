@@ -1,11 +1,11 @@
 package glib;
 
-import glib.Destroyable;
+import glib.Disposable;
 import haxe.Json;
 /**
  * Logging Utilities
  */
-class Log implements IDestroyable {
+class Log implements IDisposable {
   var _all:Array<String>;
   var _info:Array<String>;
   var _warn:Array<String>;
@@ -32,9 +32,9 @@ class Log implements IDestroyable {
     quiet = false;
   }
   /**
-   * Destroys Log instance
+   * Disposes Log instance
    */
-  public function destroy() {
+  public function dispose() {
     while (_all.length > 0) _all.pop();
     while (_info.length > 0) _info.pop();
     while (_warn.length > 0) _warn.pop();
