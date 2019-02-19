@@ -12,12 +12,12 @@ class Log implements IDisposable {
   var _error:Array<String>;
   /**
    * Flag to set whether or not Logs are suppressed.
-   * If suppressed, Logs will not be `trace`d or stored by the Logger
+   * If suppressed, Logs will not `trace` or be stored by the Logger
    */
   public var suppress:Bool;
   /**
    * Flag to set whether or not Logs are quiet.
-   * If quiet, Logs will not be `trace`d, but they will be stored by the Logger
+   * If quiet, Logs will not `trace`, but they will be stored by the Logger
    */
   public var quiet:Bool;
   /**

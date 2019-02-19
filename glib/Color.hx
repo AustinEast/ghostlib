@@ -11,7 +11,7 @@ package glib;
  * Note that when using properties of a Color other than ARGB, the values are ultimately stored as
  * ARGB values, so repeatedly manipulating HSB/HSL/CMYK values may result in a gradual loss of precision.
  *
- * Originally Written for HaxeFlixel (https://github.com/HaxeFlixel/flixel/blob/master/flixel/util/Color.hx)
+ * Originally Written for HaxeFlixel (https://github.com/HaxeFlixel/flixel/blob/master/flixel/util/FlxColor.hx)
  * @author Joe Williamson (JoeCreates)
  */
 abstract Color(Int) from Int from UInt to Int to UInt {
