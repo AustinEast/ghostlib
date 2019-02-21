@@ -2,9 +2,8 @@
     "name": "ghostlib",
     "license": "MIT",
     "tags": [],
-    "contributors": [
-      "austineast"
-    ],
+    "description": "Helper Classes for the Ghost Framework",
+    "contributors": ["austineast"],
     "releasenote": "initial release",
     "version": "0.0.1"
   }
