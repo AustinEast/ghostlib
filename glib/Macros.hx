@@ -49,6 +49,11 @@ class Macros {
           if (pset == 'set' && !fields.exists((f) -> return f.name == 'set_${field.name}')) {
             append.push(setter(field.name, alias));
           }
+          // Add isVar metadata if needed
+          if (pget == 'get' && pset == 'set') {
+            if (field.meta != null && !field.meta.exists((m) -> return m.name == ':isVar')) field.meta.push({name: ':isVar', pos: Context.currentPos()});
+            else if (field.meta == null) field.meta = [{name: ':isVar', pos: Context.currentPos()}];
+          }
         default:
       }
     }
