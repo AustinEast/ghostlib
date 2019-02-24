@@ -8,7 +8,7 @@ haxe:
  - "development"
 
 install:
- - haxelib dev LIBNAME .
+ - haxelib dev ghostlib .
 
 script:
  - haxe test.hxml
