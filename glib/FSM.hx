@@ -3,7 +3,7 @@ package glib;
 class State<T> {
   public function enter(parent:T) {}
 
-  public function update(parent:T, dt:Float) {}
+  public function step(parent:T, dt:Float) {}
 
   public function exit(parent:T) {}
 }
@@ -20,7 +20,7 @@ class FSM<T> {
 
   public function set(state:State<T>):State<T> return requested = state;
 
-  public function update(dt:Float) {
+  public function step(dt:Float) {
     if (requested != null) {
       if (current != null) {
         current.exit(parent);
@@ -30,6 +30,6 @@ class FSM<T> {
       requested = null;
     }
 
-    current.update(parent, dt);
+    current.step(parent, dt);
   }
 }
