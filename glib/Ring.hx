@@ -1,7 +1,7 @@
 package glib;
 
 /**
- * Fixed Ring Data Structure from: https://code.haxe.org/category/data-structures/ring-array.html
+ * Fixed Ring Array Data Structure based on: https://code.haxe.org/category/data-structures/ring-array.html
  */
 @:generic class Ring<T> {
   public var cap(get, never):Int;
