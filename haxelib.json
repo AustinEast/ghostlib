@@ -4,6 +4,6 @@
     "tags": [],
     "description": "Helper Classes for the Ghost Framework",
     "contributors": ["austineast"],
-    "releasenote": "Proxy Macros",
-    "version": "0.1.0"
+    "releasenote": "glib -> ghost",
+    "version": "0.2.0"
   }
