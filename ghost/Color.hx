@@ -1,4 +1,4 @@
-package glib;
+package ghost;
 
 /**
  *

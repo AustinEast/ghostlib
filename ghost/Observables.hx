@@ -1,4 +1,4 @@
-package glib;
+package ghost;
 
 /**
  * Implements the Observer Pattern as detailed: https://code.haxe.org/category/design-patterns/observer.html

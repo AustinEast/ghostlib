@@ -1,4 +1,4 @@
-package glib;
+package ghost;
 
 /**
  * Fixed Ring Array Data Structure based on: https://code.haxe.org/category/data-structures/ring-array.html

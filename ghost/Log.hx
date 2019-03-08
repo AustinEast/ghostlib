@@ -1,6 +1,6 @@
-package glib;
+package ghost;
 
-import glib.Disposable;
+import ghost.Disposable;
 import haxe.Json;
 /**
  * Logging Utilities

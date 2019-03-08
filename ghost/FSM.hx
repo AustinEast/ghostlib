@@ -1,4 +1,4 @@
-package glib;
+package ghost;
 
 class State<T> {
   public function enter(parent:T) {}

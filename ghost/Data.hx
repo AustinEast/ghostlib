@@ -1,4 +1,4 @@
-package glib;
+package ghost;
 
 /**
  * Class to provide different Utilities for dealing with Object Data
@@ -44,7 +44,7 @@ class Data {
       // Convert COLOR string and array of strings to INT
       if (f.indexOf("color") == 0) {
         if (Std.is(d, String)) {
-          Reflect.setField(into, f, glib.Color.fromString(d));
+          Reflect.setField(into, f, ghost.Color.fromString(d));
           continue;
         }
       }

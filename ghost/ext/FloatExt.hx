@@ -1,4 +1,4 @@
-package ext;
+package ghost.ext;
 
 class FloatExt {
   public static inline function double(value:Float) return value * 2;

@@ -1,4 +1,4 @@
-package glib;
+package ghost;
 
 import haxe.macro.Context;
 import haxe.macro.Expr;
@@ -8,7 +8,7 @@ using Lambda;
  *	Implementing this interface on a Class will run `Proxy.build`, then remove itself.
 **/
 @:remove
-@:autoBuild(glib.Proxy.build())
+@:autoBuild(ghost.Proxy.build())
 interface IProxy {}
 
 class Proxy {
