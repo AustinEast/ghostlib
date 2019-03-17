@@ -17,7 +17,10 @@ class ComponentBase<T> implements IDisposable {
     this.owner = components.owner;
   }
 
-  public function removed() components = null;
+  public function removed() {
+    components = null;
+    owner = null;
+  }
 
   public function pre_step(dt:Float) {}
 
