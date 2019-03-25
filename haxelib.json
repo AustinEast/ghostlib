@@ -4,6 +4,6 @@
     "tags": [],
     "description": "Helper Classes for the Ghost Framework",
     "contributors": ["austineast"],
-    "releasenote": "glib -> ghost",
-    "version": "0.2.0"
+    "releasenote": "added constructor to FSM",
+    "version": "0.2.1"
   }

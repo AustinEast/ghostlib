@@ -1,6 +1,8 @@
 package ghost;
 
 class State<T> {
+  public function new() {}
+
   public function enter(parent:T) {}
 
   public function step(parent:T, dt:Float) {}
