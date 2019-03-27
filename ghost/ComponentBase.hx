@@ -89,7 +89,7 @@ class ComponentsBase<T> implements IDisposable {
 
   public function dispose() {
     active = false;
-    members = null;
     Disposable.disposeArray(members_fast);
+    members = null;
   }
 }
