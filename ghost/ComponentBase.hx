@@ -2,7 +2,6 @@ package ghost;
 
 import ghost.Disposable.IDisposable;
 
-@:generic
 class ComponentBase<T> implements IDisposable {
   public var owner(default, null):T;
   public var components(default, null):ComponentsBase<T>;
@@ -38,7 +37,6 @@ class ComponentBase<T> implements IDisposable {
   }
 }
 
-@:generic
 class ComponentsBase<T> implements IDisposable {
   public var active:Bool;
   public var owner:T;
